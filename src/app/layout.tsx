@@ -12,6 +12,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const syne = localFont({
+  src: "./fonts/static/Syne-Regular.ttf",
+  variable: "--font-Syne-Regular",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#fffff]`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} antialiased bg-[#fffff]`}
+      >
         {children}
       </body>
     </html>

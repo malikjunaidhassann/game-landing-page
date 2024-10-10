@@ -5,7 +5,7 @@ const NavItems = ({ item }: { item: string }) => {
   return (
     <Link
       href="/"
-      className="text-black py-3 px-2 rounded-b-lg hover:bg-gradient-to-t from-[#6C5CE7] to-orange-800/10"
+      className="text-dimWhite font-syne tracking-wide font-semibold py-3 px-2 rounded-b-lg hover:text-white"
     >
       {item}
     </Link>

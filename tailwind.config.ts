@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         blueMain: "#6C5CE7", 
+        dimWhite:"#ebf2ffd9"
+      },
+      fontFamily: {
+        Inter: ["Inter", "sans-serif"],
+        syne: ['var(--font-Syne-Regular)'],
       },
     },
   },

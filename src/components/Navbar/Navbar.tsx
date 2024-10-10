@@ -1,29 +1,25 @@
 import React from "react";
-import { FaLinkedin, FaDiscord, FaInstagram } from "react-icons/fa";
-import NavLinks from "./NavLinks";
 import NavItems from "./NavItems";
 import NavLogo from "./NavLogo";
+import { MdArrowOutward } from "react-icons/md";
 
 const navItems = ["Home", "Services", "Portfolio", "Testimonials", "About"];
-const links = [
-  { icon: <FaLinkedin color="#6C5CE7" />, link: "/" },
-  { icon: <FaDiscord color="#6C5CE7" />, link: "/" },
-  { icon: <FaInstagram color="#6C5CE7" />, link: "/" },
-];
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div
+      style={{ transform: "translate(-50%,-50%)" }}
+      className="flex justify-between items-center absolute top-12 w-8/12 left-2/4 bg-black rounded-full py-1.5 px-6 z-50"
+    >
       <NavLogo />
       <div className="flex gap-[20px] items-center">
         {navItems.map((item) => (
           <NavItems item={item} />
         ))}
       </div>
-      <div className="flex gap-4 items-center">
-        {links.map((link) => (
-          <NavLinks link={link} />
-        ))}
+      <div className="flex gap-1 items-center">
+        <p className="font-syne text-white tracking-wide"> Hire Us</p>
+        <MdArrowOutward color="#ffff" />
       </div>
     </div>
   );
