@@ -13,8 +13,8 @@ const Navbar = () => {
     >
       <NavLogo />
       <div className="flex gap-[20px] items-center">
-        {navItems.map((item) => (
-          <NavItems item={item} />
+        {navItems.map((item, i) => (
+          <NavItems key={i} item={item} />
         ))}
       </div>
       <div className="flex gap-1 items-center">
