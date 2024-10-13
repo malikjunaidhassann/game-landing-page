@@ -41,8 +41,8 @@ const data2 = [
 const ExpertiesSection = () => {
   return (
     <div className="w-9/12 mx-auto pt-14 pb-4 bg-[#fafafa]">
-      <p className="font-syneBold text-[48px] font-bold leading-[1.167]">Experties Section</p>
-      <div className="pt-10 flex">
+      <p className="font-syneBold text-[48px] font-bold leading-[1.167]">Our Services</p>
+      <div className="pt-10 flex justify-center">
         <div className="w-9/12 pl-4">
           <div className=" flex  gap-4">
             {data.map((item) => (
@@ -55,13 +55,6 @@ const ExpertiesSection = () => {
             ))}
           </div>
         </div>
-        <div className="w-3/12 ml-3 bg-black hover:bg-gradient-to-br from-[#00faff] via-[#0063ff] to-[#070d1e] rounded-lg relative">
-          <div className=" flex gap-1 items-center absolute right-3 top-4">
-            <p className="font-syne text-white tracking-wide"> Hire Us</p>
-            <MdArrowOutward color="#ffff" />
-          </div>
-          <Image className="pt-12" src={dragon} alt="dragon" />
-        </div>
       </div>
     </div>
   );
@@ -70,7 +63,15 @@ const ExpertiesSection = () => {
 export default ExpertiesSection;
 
 // "use client";
-
+{
+  /* <div className="w-3/12 ml-3 bg-black hover:bg-gradient-to-br from-[#00faff] via-[#0063ff] to-[#070d1e] rounded-lg relative">
+  <div className=" flex gap-1 items-center absolute right-3 top-4">
+    <p className="font-syne text-white tracking-wide"> Hire Us</p>
+    <MdArrowOutward color="#ffff" />
+  </div>
+  <Image className="pt-12" src={dragon} alt="dragon" />
+</div>; */
+}
 // import React, { useState } from "react";
 // import ExpertiseCard from "./ExpertiesCard";
 
