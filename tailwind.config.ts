@@ -17,6 +17,7 @@ const config: Config = {
       fontFamily: {
         Inter: ["Inter", "sans-serif"],
         syne: ['var(--font-Syne-Regular)'],
+        syneBold: ['var(--font-Syne-Bold)'],
       },
     },
   },

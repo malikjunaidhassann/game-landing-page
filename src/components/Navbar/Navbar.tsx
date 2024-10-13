@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div
       style={{ transform: "translate(-50%,-50%)" }}
-      className="flex justify-between items-center absolute top-12 w-8/12 left-2/4 bg-black rounded-full py-1.5 px-6 z-50"
+      className="flex justify-between items-center absolute top-12 w-9/12 left-2/4 bg-black rounded-full py-1.5 px-6 z-50"
     >
       <NavLogo />
       <div className="flex gap-[20px] items-center">
