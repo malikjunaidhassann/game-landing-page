@@ -4,7 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dragon from "../../app/assest/dragon.png";
-import SliderCard from "./SliderCard";
+import TestimonialCard from "./TestimonialCard";
+import "./style.css";
+// import SliderCard from "./SliderCard";
 
 const data = [
   {
@@ -44,20 +46,68 @@ const data = [
       "A Professional NBA player partnered with us on the creation of 3D basketball courts, coolmetaverse avatars, and NFTs. We helped in brainstorming ideas and handled all the engineeringand artwork for this basketball mini-game.",
     image: dragon,
   },
+  {
+    name: "Sandbox",
+    description:
+      "A Professional NBA player partnered with us on the creation of 3D basketball courts, coolmetaverse avatars, and NFTs. We helped in brainstorming ideas and handled all the engineeringand artwork for this basketball mini-game.",
+    image: dragon,
+  },
+  {
+    name: "Sandbox",
+    description:
+      "A Professional NBA player partnered with us on the creation of 3D basketball courts, coolmetaverse avatars, and NFTs. We helped in brainstorming ideas and handled all the engineeringand artwork for this basketball mini-game.",
+    image: dragon,
+  },
+  ,
+  {
+    name: "Sandbox",
+    description:
+      "A Professional NBA player partnered with us on the creation of 3D basketball courts, coolmetaverse avatars, and NFTs. We helped in brainstorming ideas and handled all the engineeringand artwork for this basketball mini-game.",
+    image: dragon,
+  },
+  {
+    name: "Sandbox",
+    description:
+      "A Professional NBA player partnered with us on the creation of 3D basketball courts, coolmetaverse avatars, and NFTs. We helped in brainstorming ideas and handled all the engineeringand artwork for this basketball mini-game.",
+    image: dragon,
+  },
+  {
+    name: "Sandbox",
+    description:
+      "A Professional NBA player partnered with us on the creation of 3D basketball courts, coolmetaverse avatars, and NFTs. We helped in brainstorming ideas and handled all the engineeringand artwork for this basketball mini-game.",
+    image: dragon,
+  },
+  {
+    name: "Sandbox",
+    description:
+      "A Professional NBA player partnered with us on the creation of 3D basketball courts, coolmetaverse avatars, and NFTs. We helped in brainstorming ideas and handled all the engineeringand artwork for this basketball mini-game.",
+    image: dragon,
+  },
 ];
 
-function CustomSlider() {
+function TestimonialSlider() {
   var settings = {
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    centerMode: true,
     autoplay: true,
     autoplaySpeed: 3000,
     dot: false,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 4,
-    initialSlide: 0,
 
     responsive: [
+      {
+        breakpoint: 1660,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -85,11 +135,11 @@ function CustomSlider() {
     ],
   };
   return (
-    <div className="slider-container">
+    <div className="testimonial-slider-container">
       <Slider {...settings}>
         {data.map((item, index) => (
-          <div key={index}>
-            <SliderCard data={item} />
+          <div className="mt-16 testimonial-slider" key={index}>
+            {<TestimonialCard />}
           </div>
         ))}
       </Slider>
@@ -97,4 +147,4 @@ function CustomSlider() {
   );
 }
 
-export default CustomSlider;
+export default TestimonialSlider;

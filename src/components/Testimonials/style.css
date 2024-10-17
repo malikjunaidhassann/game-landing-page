@@ -1,0 +1,12 @@
+.testimonial-slider-container .slick-active {
+  opacity: 0.5 !important;
+}
+
+.testimonial-slider-container .slick-center {
+  opacity: 1 !important;
+}
+
+.testimonial-slider-container .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
